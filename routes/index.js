@@ -10,6 +10,10 @@ route.post("/login", UserControllers.loginUser)
 
 route.get("/vehicle")
 
+route.get("/coba", (req, res) => {
+    res.send("Masuk")
+})
+
 route.use(authenticateUser)
 route.get("/user", UserControllers.getAllData)
 
