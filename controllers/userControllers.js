@@ -37,6 +37,7 @@ class UserControllers {
             const resultData = await User.create(inputUser)
             console.log(resultData, "==> THIS IS FINAL");
             
+            res.status(201).json("Data berhasil ditambahkan")
         } catch (error) {
             console.log(error);
             

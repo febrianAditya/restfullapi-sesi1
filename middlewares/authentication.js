@@ -1,4 +1,3 @@
-const { where } = require("sequelize")
 const { verifyToken } = require("../helpers/jwt")
 const { User } = require("../models")
 
@@ -29,6 +28,8 @@ async function authenticateUser(req, res, next) {
         
     } catch (error) {
         // console.log(error, "==> ini error");
+        console.log(error, "==> FEBRI");
+        
         res.status(500).json(error)
     }
 }

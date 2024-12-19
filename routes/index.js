@@ -8,7 +8,9 @@ route.post("/register", UserControllers.registerUser)
 
 route.post("/login", UserControllers.loginUser)
 
-route.get("/vehicle")
+route.get("/vehicle", (req, res) => {
+    res.send("Mobil")
+})
 
 route.get("/coba", (req, res) => {
     res.send("Masuk")
