@@ -1,7 +1,6 @@
 const { comparePassword } = require("../helpers/bcrypt")
 const {User, UserDetail} = require("../models")
 const { generateToken, verifyToken } = require("../helpers/jwt")
-const { where } = require("sequelize")
 
 
 class UserControllers {
@@ -87,7 +86,6 @@ class UserControllers {
         }
     }
 
-
     static async editUser(req, res) {
         const { username } = req.body
         const {id} = req.params
@@ -109,6 +107,10 @@ class UserControllers {
         } catch (error) {
             res.status(500).json(error)
         }
+    }
+
+    static coba(req, res) {
+        res.status(200).json("Masuk kesini")
     }
 }
 

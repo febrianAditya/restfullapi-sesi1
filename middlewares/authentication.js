@@ -20,9 +20,7 @@ async function authenticateUser(req, res, next) {
             })
         }
 
-        let manipulateJson = dataWithToken.toJSON()
-        // console.log(manipulateJson, "==> FINAL");
-        
+        let manipulateJson = dataWithToken.toJSON()        
         res.locals.user = manipulateJson
         next()
         
