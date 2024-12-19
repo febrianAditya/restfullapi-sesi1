@@ -15,10 +15,10 @@
   },
   "production": {
     "username": "postgres",
-    "password": "XDVNGujaHmYnDNygLtkcfudRGdpasTET",
+    "password": "WEfnSELAljtgCTwaSRmgwekJvdpecGQk",
     "database": "railway",
     "host": "junction.proxy.rlwy.net",
     "dialect": "postgres",
-    "port": "43871"
+    "port": "12872"
   }
 }
